@@ -36,7 +36,7 @@
     </style>
 
 <body>
-    <form id="form">
+  <form id="form">
         <h2>Опросник для обладателей кошек</h2>
         <div class="head">
             <img src="http://s1.iconbird.com/ico/2013/12/555/w256h2561387219138Cat2.png" alt="kot">
@@ -45,21 +45,21 @@
         </div>
         <div>
             <h3>1.Кличка питомца</h3>
-            <input type="text" id="namecat" required>
+            <input type="text" name="catsname" id="namecat" required>
         </div>
         <div>
             <h3>2.Имя владельца</h3>
-            <input type="text" id="name" required>
+            <input type="text" name="namehuman" id="name" required>
         </div>
         <div>
             <h3>3.Номер телефона владельца</h3>
-            <input type="text" id="phone" placeholder="+380......... " max=13 min=1
+            <input type="text" name="phone" id="phone" placeholder="+380......... " max=13 min=1
                 pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
         </div>
         <div>
             <h3> 4.Порода питомца</h3>
-            <select>
-                <option id="poroda">британский</option>
+            <select name="poroda">
+                <option  id="poroda">британский</option>
                 <option id="poroda">сиамский</option>
                 <option id="poroda">бенгальский</option>
                 <option id="poroda">персидский</option>
@@ -70,21 +70,21 @@
 
         <div>
             <h3>5.Чем питается?</h3></br>
-            <input type="radio" id="dry" name="food">
-            <label for="food">сухой корм</label></br>
-            <input type="radio" id="wet" name="food">
+            <input type="radio" id="dry" name="food" value="dry" >
+            <label for="food" >сухой корм</label></br>
+            <input type="radio" id="wet" name="food" value="wet">
             <label for="food">влажный корм</label></br>
-            <input type="radio" id="natural" name="food">
+            <input type="radio" id="natural" name="food" value="origin">
             <label for="food">натуральное питание</label>
         </div>
         <div>
             <h3> 6.Пол животного</label></h3>
-            <input type="checkbox" id="men" name="sex" value=""><label>самец</label><br>
-            <input type="checkbox" id="women" name="sex" value=""><label>самка</label><br>
+            <input type="checkbox"  id="men" name="sex" value="man"><label>самец</label><br>
+            <input type="checkbox"  id="women" name="sex" value="woman"><label>самка</label><br>
         </div>
         <div>
             <h3>7.Комментарий владельца:</h3>
-            <div><textarea rows="5"></textarea></div>
+            <div class="comment"><textarea name="textarea" rows="5"></textarea></div>
         </div>
         <div>
             <h3>8.Приложить фото питомца</h3>
